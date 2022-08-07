@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">44.109s</div>
+<div class="counter">9m49.51s</div>
 <p>duration</p>
 </div>
 </td>
@@ -76,13 +76,13 @@
 <a name="cancelar compra exitosamente"></a>
 <h3 class="failures">cancelar compra exitosamente</h3>
 <span class="code">
-<pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div id=&quot;main-toggle-menu&quot; class=&quot;main-toggle-menu closed&quot;&gt;...&lt;/div&gt; is not clickable at point (204, 95). Other element would receive the click: &lt;div class=&quot;mfp-content&quot;&gt;...&lt;/div&gt;
+<pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 300.000
   (Session info: chrome=103.0.5060.134)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-2JG74F8', ip: '192.168.101.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\G\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:51089}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ccdb8a864c75616fbdee44f641edb7af
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\G\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:56027}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dcb800096b3fc07b3d9cdf9c32a2da9a
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -95,9 +95,9 @@ Session ID: ccdb8a864c75616fbdee44f641edb7af
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at co.com.Dekosas.Steps.PlantasDecorativasStep.clickBtnMenu(PlantasDecorativasStep.java:24)
-	at co.com.Dekosas.Steps.PlantasDecorativasStep$$EnhancerByCGLIB$$af458bb2.CGLIB$clickBtnMenu$3(&lt;generated&gt;)
-	at co.com.Dekosas.Steps.PlantasDecorativasStep$$EnhancerByCGLIB$$af458bb2$$FastClassByCGLIB$$1bedc0bc.invoke(&lt;generated&gt;)
+	at co.com.Dekosas.Steps.AgregarTresProductosStep.clickBtnPasarACaja(AgregarTresProductosStep.java:74)
+	at co.com.Dekosas.Steps.AgregarTresProductosStep$$EnhancerByCGLIB$$5e2c1ecc.CGLIB$clickBtnPasarACaja$3(&lt;generated&gt;)
+	at co.com.Dekosas.Steps.AgregarTresProductosStep$$EnhancerByCGLIB$$5e2c1ecc$$FastClassByCGLIB$$9e444e03.invoke(&lt;generated&gt;)
 	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
 	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)
 	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)
@@ -105,9 +105,9 @@ Session ID: ccdb8a864c75616fbdee44f641edb7af
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
-	at co.com.Dekosas.Steps.PlantasDecorativasStep$$EnhancerByCGLIB$$af458bb2.clickBtnMenu(&lt;generated&gt;)
-	at co.com.Dekosas.StepDefinitions.CarroDeCompraStepDefinition.queElUsuarioSeEncuentreEnLaSubCategoriaPlantaDecorativa(CarroDeCompraStepDefinition.java:27)
-	at ✽.que el usuario se encuentre en la sub categoria planta decorativa(src/test/resources/features/cancelarCompra.feature:7)
+	at co.com.Dekosas.Steps.AgregarTresProductosStep$$EnhancerByCGLIB$$5e2c1ecc.clickBtnPasarACaja(&lt;generated&gt;)
+	at co.com.Dekosas.StepDefinitions.CancelarcompraStepDefinitions.agrega_tres_productos_al_carro_de_compra(CancelarcompraStepDefinitions.java:50)
+	at ✽.agrega tres productos al carro de compra(src/test/resources/features/cancelarCompra.feature:11)
 </pre>
 </span>
 </div>
@@ -124,7 +124,7 @@ Session ID: ccdb8a864c75616fbdee44f641edb7af
 </thead>
 <tr>
 <td class="failures">cancelar compra exitosamente</td>
-<td class="failures">44.109s</td>
+<td class="failures">9m49.51s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -132,16 +132,18 @@ Session ID: ccdb8a864c75616fbdee44f641edb7af
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>ago 05, 2022 8:13:25 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+<pre>ago 07, 2022 1:50:18 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized --disable..., goog:chromeOptions: {args: [--start-maximized, --disable-popup-blocking], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 103.0.5060.134 (8ec6fce403b3feb0869b0732eda8bd95011d333c-refs/branch-heads/5060@{#1262}) on port 12555
+Starting ChromeDriver 103.0.5060.134 (8ec6fce403b3feb0869b0732eda8bd95011d333c-refs/branch-heads/5060@{#1262}) on port 34696
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-ago 05, 2022 8:13:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+ago 07, 2022 1:50:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
+[1659898804.270][SEVERE]: Timed out receiving message from renderer: 300.000
+[1659898804.279][SEVERE]: Timed out receiving message from renderer: 300.000
 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
            __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
   _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
@@ -152,8 +154,8 @@ INFORMACIÓN: Detected dialect: W3C
 
 TEST FAILED WITH ERROR: cancelar compra exitosamente
 ---------------------------------------------------------------------
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Click btn menu
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - element click intercepted: Element &lt;div id=&quot;main-toggle-menu&quot; class=&quot;main-toggle-menu closed&quot;&gt;...&lt;/div&gt; is not clickable at point (204, 95). Other element would receive the click: &lt;div class=&quot;mfp-content&quot;&gt;...&lt;/div&gt;
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Click btn pasar a caja
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - timeout: Timed out receiving message from renderer: 300.000
 </pre>
 </span>
 </div>
@@ -165,7 +167,7 @@ TEST FAILED WITH ERROR: cancelar compra exitosamente
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.8</a> at 5/08/2022 08:14:11 PM</p>
+<a href="http://www.gradle.org">Gradle 6.8</a> at 7/08/2022 02:00:19 PM</p>
 </div>
 </div>
 </body>

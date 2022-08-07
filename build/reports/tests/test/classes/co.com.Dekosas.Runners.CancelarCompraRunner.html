@@ -90,16 +90,16 @@
 ?[31msrc/test/resources/features/cancelarCompra.feature:10 ?[0m# cancelar compra exitosamente
 
 1 Scenarios (?[31m1 failed?[0m)
-7 Steps (?[31m1 failed?[0m, ?[36m4 skipped?[0m, ?[32m2 passed?[0m)
-0m44,597s
+7 Steps (?[31m1 failed?[0m, ?[36m2 skipped?[0m, ?[32m4 passed?[0m)
+9m50,055s
 
-org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div id=&quot;main-toggle-menu&quot; class=&quot;main-toggle-menu closed&quot;&gt;...&lt;/div&gt; is not clickable at point (204, 95). Other element would receive the click: &lt;div class=&quot;mfp-content&quot;&gt;...&lt;/div&gt;
+org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 300.000
   (Session info: chrome=103.0.5060.134)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-2JG74F8', ip: '192.168.101.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\G\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:51089}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ccdb8a864c75616fbdee44f641edb7af
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\G\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:56027}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dcb800096b3fc07b3d9cdf9c32a2da9a
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -112,9 +112,9 @@ Session ID: ccdb8a864c75616fbdee44f641edb7af
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at co.com.Dekosas.Steps.PlantasDecorativasStep.clickBtnMenu(PlantasDecorativasStep.java:24)
-	at co.com.Dekosas.Steps.PlantasDecorativasStep$$EnhancerByCGLIB$$af458bb2.CGLIB$clickBtnMenu$3(&lt;generated&gt;)
-	at co.com.Dekosas.Steps.PlantasDecorativasStep$$EnhancerByCGLIB$$af458bb2$$FastClassByCGLIB$$1bedc0bc.invoke(&lt;generated&gt;)
+	at co.com.Dekosas.Steps.AgregarTresProductosStep.clickBtnPasarACaja(AgregarTresProductosStep.java:74)
+	at co.com.Dekosas.Steps.AgregarTresProductosStep$$EnhancerByCGLIB$$5e2c1ecc.CGLIB$clickBtnPasarACaja$3(&lt;generated&gt;)
+	at co.com.Dekosas.Steps.AgregarTresProductosStep$$EnhancerByCGLIB$$5e2c1ecc$$FastClassByCGLIB$$9e444e03.invoke(&lt;generated&gt;)
 	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
 	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)
 	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)
@@ -122,9 +122,9 @@ Session ID: ccdb8a864c75616fbdee44f641edb7af
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
-	at co.com.Dekosas.Steps.PlantasDecorativasStep$$EnhancerByCGLIB$$af458bb2.clickBtnMenu(&lt;generated&gt;)
-	at co.com.Dekosas.StepDefinitions.CarroDeCompraStepDefinition.queElUsuarioSeEncuentreEnLaSubCategoriaPlantaDecorativa(CarroDeCompraStepDefinition.java:27)
-	at ?.que el usuario se encuentre en la sub categoria planta decorativa(src/test/resources/features/cancelarCompra.feature:7)
+	at co.com.Dekosas.Steps.AgregarTresProductosStep$$EnhancerByCGLIB$$5e2c1ecc.clickBtnPasarACaja(&lt;generated&gt;)
+	at co.com.Dekosas.StepDefinitions.CancelarcompraStepDefinitions.agrega_tres_productos_al_carro_de_compra(CancelarcompraStepDefinitions.java:50)
+	at ?.agrega tres productos al carro de compra(src/test/resources/features/cancelarCompra.feature:11)
 
 </pre>
 </span>
@@ -171,7 +171,7 @@ TEST STARTED: cancelar compra exitosamente
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.8</a> at 5/08/2022 08:14:11 PM</p>
+<a href="http://www.gradle.org">Gradle 6.8</a> at 7/08/2022 02:00:19 PM</p>
 </div>
 </div>
 </body>
