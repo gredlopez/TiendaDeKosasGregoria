@@ -24,7 +24,7 @@ public class InicioSesionStep {
 
     @Step
     public void BtnMiCuenta() {
-        esperaImplicita.esperaimplicita(5);
+        esperaImplicita.esperaimplicita(10);
         inicioSesionPageObject.getDriver().findElement(inicioSesionPageObject.getBtnMiCuenta()).click();
     }
 
@@ -43,6 +43,7 @@ public class InicioSesionStep {
 
     @Step
     public void BtnEntrar() {
+        esperaImplicita.esperaimplicita(10);
         inicioSesionPageObject.getDriver().findElement(inicioSesionPageObject.getBtnEntrar()).click();
     }
 

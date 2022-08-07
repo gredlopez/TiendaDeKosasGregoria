@@ -20,19 +20,19 @@ public class PlantasDecorativasStep {
 
         @Step
         public void clickBtnMenu(){
-        esperaImplicita.esperaimplicita(5);
+        esperaImplicita.esperaimplicita(10);
         plantasDecortivaPageObject.getDriver().findElement(plantasDecortivaPageObject.getBtnMenu()).click();
     }
          @Step
         public void clickbtnDecoracion(){
-        esperaImplicita.esperaimplicita(5);
+        esperaImplicita.esperaimplicita(10);
         Actions action = new Actions(plantasDecortivaPageObject.getDriver());
         WebElement element = plantasDecortivaPageObject.getDriver().findElement(plantasDecortivaPageObject.getBtnDecoracion());
         action.moveToElement(element).build().perform();
     }
         @Step
         public  void clickBtnPlantaDecorativa(){
-        esperaImplicita.esperaimplicita(5);
+        esperaImplicita.esperaimplicita(20);
         plantasDecortivaPageObject.getDriver().findElement(plantasDecortivaPageObject.getBtnPlantaDecorativa()).click();
 
     }
@@ -45,13 +45,14 @@ public class PlantasDecorativasStep {
     }
          @Step
           public void cliCKBtnAgregar1(){
-        esperaImplicita.esperaimplicita(5);
+        esperaImplicita.esperaimplicita(10);
         plantasDecortivaPageObject.getDriver().findElement(plantasDecortivaPageObject.getBtnAgregar1()).click();
         plantasDecortivaPageObject.getDriver().findElement(plantasDecortivaPageObject.getBtnAgregar1()).click();
     }
         @Step
         public void clickBtnAlgregarAlCarrito(){
-        plantasDecortivaPageObject.getDriver().findElement(plantasDecortivaPageObject.getBtnAgregarAlCarrito()).click();
+            esperaImplicita.esperaimplicita(10);
+            plantasDecortivaPageObject.getDriver().findElement(plantasDecortivaPageObject.getBtnAgregarAlCarrito()).click();
         }
 
 

@@ -19,7 +19,7 @@ public class DatosCajaStep {
 
     @Step
     public void txtNombre() throws IOException {
-        esperaImplicita.esperaimplicita(5);
+        esperaImplicita.esperaimplicita(10);
         datosCajaPageObject.getDriver().findElement(datosCajaPageObject.getTxtNombre()).
                 sendKeys(datos.leerDatosExcel("RETOTIENDA.xlsx", "DireccionDeEnvio", 1, 0));
 
